@@ -152,11 +152,11 @@ def define_s5e9945_kernel(
 
     native.filegroup(
         name = name + "_vendor_files",
-        srcs = [ "//prebuilts/platform/common:fstab.s5e9945",
-                 "//prebuilts/platform/erd9945:conf/init.recovery.s5e9945.rc",
-                 "//prebuilts/platform/erd9945:conf/init.s5e9945.usb.rc",
-                 "//prebuilts/platform/erd9945:firmware/sgpu/vangogh_lite_unified_evt1.bin",
-                 "//prebuilts/boot-artifacts/arm64/exynos:system_prebuilt_files.tar.gz",
+        srcs = [ #"//prebuilts/platform/common:fstab.s5e9945",
+                 #"//prebuilts/platform/erd9945:conf/init.recovery.s5e9945.rc",
+                 #"//prebuilts/platform/erd9945:conf/init.s5e9945.usb.rc",
+                 #"//prebuilts/platform/erd9945:firmware/sgpu/vangogh_lite_unified_evt1.bin",
+                 #"//prebuilts/boot-artifacts/arm64/exynos:system_prebuilt_files.tar.gz",
         ],
     )
 
@@ -210,8 +210,8 @@ def define_s5e9945_kernel(
         kernel_build = name,
         initramfs_staging = name + "_vendor_boot_staging",
         vendor_ramdisk_binaries = [
-            #name + "_custom_vendor_ramdisk",
-            "//prebuilts/boot-artifacts/arm64/exynos:ramdisk_",
+            name + "_custom_vendor_ramdisk",
+            #"//prebuilts/boot-artifacts/arm64/exynos:ramdisk_",
         ],
         vendor_boot_name = "vendor_boot",
     )
