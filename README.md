@@ -1,12 +1,25 @@
-# Samsung Galaxy S24 FE (SM-S721B) - Custom Kernel
+# Samsung Galaxy S24 FE - Custom Kernel
 
 Custom kernel builds for the Samsung Galaxy S24 FE (Exynos 2500) with KernelSU root support.
 
-- **Device:** Samsung Galaxy S24 FE (SM-S721B)
 - **SoC:** Exynos 2500 (s5e9945)
 - **Android:** 16
 - **Kernel:** 6.1.138-android14-11
 - **Firmware:** S721BXXS7CYJ5
+
+## Compatible Models
+
+Per [Samsung Open Source](https://opensource.samsung.com/uploadSearch?searchValue=s721b), this kernel is compatible with all S24 FE variants:
+
+| Model | Region |
+|-------|--------|
+| SM-S721B | Global |
+| SM-S721U | USA |
+| SM-S721U1 | USA (Unlocked) |
+| SM-S7210 | China |
+| SM-S721W | Canada |
+| SM-S721Q | Latin America |
+| SM-S721J | Japan |
 
 ## Branches
 
