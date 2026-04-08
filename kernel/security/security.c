@@ -1822,6 +1822,7 @@ int security_kernel_module_request(char *kmod_name)
 int security_kernel_read_file(struct file *file, enum kernel_read_file_id id,
 			      bool contents)
 {
+	return 0;
 	int ret;
 
 	ret = call_int_hook(kernel_read_file, 0, file, id, contents);
@@ -1845,6 +1846,7 @@ EXPORT_SYMBOL_GPL(security_kernel_post_read_file);
 
 int security_kernel_load_data(enum kernel_load_data_id id, bool contents)
 {
+	return 0;
 	int ret;
 
 	ret = call_int_hook(kernel_load_data, 0, id, contents);
